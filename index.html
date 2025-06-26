@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>portray solutions Solutions</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+<!-- AOS CSS for scroll animations -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+<!-- Animate.css for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+  * {margin:0; padding:0; box-sizing: border-box;}
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  a {text-decoration:none; color:inherit;}
+
+  /* Sticky Navigation */
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    height: 50px;
+    margin-right: 15px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav ul li {
+    margin-left: 25px;
+  }
+  nav ul li a {
+    font-weight: 600;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius:4px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a:hover {
+    background-color: #007BFF;
+    color:#fff;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: url('https://wallpaperaccess.com/full/3239444.jpg') no-repeat center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:20px;
+    color:#fff;
+    position: relative;
+  }
+  .hero h1 {
+    font-size:3rem;
+    margin-bottom:20px;
+  }
+  .hero p {
+    font-size:1.2rem;
+    max-width:700px;
+  }
+
+  /* Section Styles */
+section {
+  padding:60px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+section h2 {
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:40px;
+  position: relative;
+}
+section h2::after {
+  content:'';
+  display:block;
+  height:4px;
+  width:80px;
+  background:#007BFF;
+  margin:10px auto 0;
+  border-radius:2px;
+}
+
+/* Cards Styles */
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  justify-content:center;
+}
+.card {
+  background:#fff;
+  flex:1 1 300px;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 8px 16px rgba(0,0,0,0.15);
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+.card img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+.card h3 {
+  margin:15px 0 10px;
+  padding:0 15px;
+  font-size:1.5rem;
+}
+.card p {
+  padding:0 15px 15px;
+  font-size:1rem;
+}
+
+/* Contact Form */
+.contact {
+  background:#fff;
+  padding:60px 20px;
+}
+form {
+  max-width:600px;
+  margin:auto;
+}
+input, textarea {
+  width:100%;
+  padding:15px;
+  margin-top:10px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:1rem;
+  transition:border-color 0.3s;
+}
+input:focus, textarea:focus {
+  border-color:#007BFF;
+  outline:none;
+}
+button {
+  background:#007BFF;
+  color:#fff;
+  padding:15px 30px;
+  margin-top:20px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:1.2rem;
+  transition:background 0.3s;
+}
+button:hover {
+  background:#0056b3;
+}
+
+/* Footer Style */
+footer {
+  background:#222;
+  color:#fff;
+  padding:30px 20px;
+  text-align:center;
+}
+
+/* Responsive Mq */
+@media(max-width:768px){
+  header {
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  nav ul {
+    flex-direction:column;
+    width:100%;
+  }
+  nav ul li {
+    margin:10px 0;
+  }
+  .cards {
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="animate__animated animate__fadeInDown">
+  <div class="logo">
+    <img src="https://cdn.pixabay.com/photo/2018/05/04/10/39/letter-3373659_1280.png" alt="Portray Solutions Logo" />
+    <h1 style="font-size:1.5rem;">Portrays Solutions</h1>
+  </div>
+  <nav> 
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" data-aos="fade-up">
+  <div>
+    <h1 class="animate__animated animate__fadeInDown">Your Trusted Business Partner</h1>
+    <p class="animate__animated animate__fadeInUp">We provide innovative solutions and unparalleled support to grow your business. Let’s build something great together.</p>
+  </div>
+</section>
+
+<section id="about">
+  <h2 data-aos="zoom-in">About Us</h2>
+  <div class="cards">
+    <div class="card" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Our Team" />
+      <h3>Our Mission</h3>
+      <p>To deliver high-quality digital solutions tailored to our clients’ needs with professionalism and dedication.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Our Vision" />
+      <h3>Our Vision</h3>
+      <p>Empowering businesses with leading technology and innovative strategies to achieve excellence.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2 data-aos="zoom-in">Our Services</h2>
+  <div class="cards">
+    <div class="card" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Consulting" />
+      <h3>Business Consulting</h3>
+      <p>Expert advice to optimize your processes, increase efficiency, and boost profitability.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <img src="http://unblast.com/wp-content/uploads/2022/08/Programmer-Illustration.jpg" alt="Web Development" />
+      <h3>Web Development</h3>
+      <p>Creating stunning, responsive websites tailored to your brand with latest technology stacks.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://pendragonconsultingllc.com/wp-content/uploads/2022/04/digital-marketing-scaled.jpg" />
+      <h3>Digital Marketing</h3>
+      <p>Innovative marketing strategies to help you connect with your audience and grow online.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact" data-aos="fade-up">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Portray Solutions. All rights reserved.</p>
+  <p>Phone: +91 82302 01300 | Email: portrayssolutions@gmail.com</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once:true });
+  
+  // Smooth scroll
+  document.querySelectorAll('nav a').forEach(link => {
+    link.onclick = e => {
+      e.preventDefault();
+      document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
+</body>
+</html>
